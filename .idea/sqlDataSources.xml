@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="a6999832-36ad-4a8d-8ed0-fcd0b8203d15" />
+          <option name="name" value="数据库脚本" />
+          <option name="urls">
+            <array>
+              <option value="file://$PROJECT_DIR$/../../../JavaData/02.web/day09-综合案例/02_代码/授课素材/数据库脚本.sql" />
+            </array>
+          </option>
+          <option name="scriptOptions">
+            <map>
+              <entry key="QualifyWithSchema" value="ALWAYS" />
+            </map>
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>

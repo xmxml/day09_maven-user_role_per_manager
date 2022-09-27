@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day09_maven-user_role_per_manager" />
+    <file type="web" url="file://$PROJECT_DIR$/ddi" />
+    <file type="web" url="file://$PROJECT_DIR$/ddi2" />
+    <file type="web" url="file://$PROJECT_DIR$/ddi3" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ddi/pom.xml" />
+        <option value="$PROJECT_DIR$/ddi2/pom.xml" />
+        <option value="$PROJECT_DIR$/ddi3/pom.xml" />
+        <option value="$PROJECT_DIR$/day09_maven-user_role_per_manager/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

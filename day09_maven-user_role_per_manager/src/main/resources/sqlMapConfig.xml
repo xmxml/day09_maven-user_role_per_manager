@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载外部的配置文件-->
+    <properties resource="jdbc.properties"></properties>
+    <!--settings-->
+    <settings>
+        <!--开启驼峰自动映射-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!--别名-->
+    <typeAliases>
+        <package name="com.itheima.case2.pojo"></package>
+    </typeAliases>
+    <!--mybatis环境的配置
+        一个核心配置文件，可以配置多个运行环境，default默认使用哪个运行环境
+    -->
+    <environments default="development">
+        <!--通常我们只需要配置一个就可以了， id是环境的名字 -->
+        <environment id="development">
+            <!--事务管理器：由JDBC来管理-->
+            <!--
+                事务管理器type的取值：
+                1. JDBC：由JDBC进行事务的管理
+                2. MANAGED：事务由容器来管理，后期学习Spring框架的时候，所有的事务由容器管理
+            -->
+            <transactionManager type="JDBC"/>
+            <!--数据源的配置：mybatis自带的连接池-->
+            <!--
+                数据源：
+                1. POOLED：使用mybatis创建的连接池
+                2. UNPOOLED：不使用连接池，每次自己创建连接
+                3. JNDI：由服务器提供连接池的资源，我们通过JNDI指定的名字去访问服务器中资源。
+            -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+    </environments>
+    <!--映射器-->
+    <mappers>
+        <!--加载其它的映射文件 注：注解开发是点号-->
+        <!-- <package name="com.itheima.sh.dao"></package>-->
+        <!--加载其它的映射文件 注：不是点号-->
+        <!--<mapper resource="org/mybatis/example/BlogMapper.xml"/>-->
+        <!--
+            加载其它的映射文件 xml形式
+                包扫描方式加载mapper映射文件,说明：
+                1. 要求mapper映射文件，与mapper接口要放在同一个目录
+                2. 要求mapper映射文件的名称，与mapper接口的名称要一致
+            -->
+        <package name="com.itheima.case2.dao"></package>
+    </mappers>
+</configuration>

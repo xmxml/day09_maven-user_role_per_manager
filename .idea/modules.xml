@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day09_maven-user_role_per_manager/day09_maven-user_role_per_manager.iml" filepath="$PROJECT_DIR$/day09_maven-user_role_per_manager/day09_maven-user_role_per_manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddi/ddi.iml" filepath="$PROJECT_DIR$/ddi/ddi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddi2/ddi2.iml" filepath="$PROJECT_DIR$/ddi2/ddi2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ddi3/ddi3.iml" filepath="$PROJECT_DIR$/ddi3/ddi3.iml" />
+    </modules>
+  </component>
+</project>
